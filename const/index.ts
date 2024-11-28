@@ -35,6 +35,14 @@ export interface BookRatingsProps {
   };
 }
 
+export interface User {
+  id: string;
+  name: string;
+  email: string
+  canvasToken: string;
+  password: string;
+}
+
 export const starLabels: { [index: string]: string } = {
   0.5: 'Useless',
   1: 'Useless+',
