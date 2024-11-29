@@ -1,3 +1,11 @@
+'use client'
+
+// export default function Page() {
+//     return (
+//         <h1>Home Page</h1>
+//     );
+// }
+
 import * as React from 'react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
@@ -10,7 +18,7 @@ import BookList from 'components/v2/Cards/ShoppingItemCardList';
 import Pagination from 'components/v2/Pagination';
 import { PAGE_SIZE } from 'const';
 
-const Home: NextPage = () => {
+const Home = () => {
   const [homePageQueryData, setHomePageQueryData] =
     useRecoilState(homePageQueryState);
   const [homePageBookSum] = useRecoilState(homePageBookSumState);
