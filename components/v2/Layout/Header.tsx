@@ -4,6 +4,7 @@ import {
   Bars3Icon,
   ShoppingCartIcon,
   BookOpenIcon,
+  UserIcon
 } from '@heroicons/react/24/outline';
 
 import BookTypeMenu from 'components/v2/Layout/BookTypeMenu';
@@ -52,13 +53,14 @@ export default function Header(props: HeaderProps) {
               </span>
             </div>
           </NextLink>
-
-          {/* <button className='btn btn-ghost btn-circle'>
+          <NextLink href='/logout'>
+            <button className='btn btn-ghost btn-circle'>
               <div className='indicator'>
                 <UserIcon className='w-6 h-6' />
                 <span className='badge badge-xs badge-primary indicator-item'></span>
               </div>
-            </button> */}
+            </button>
+          </NextLink>
         </div>
       </div>
     </>
